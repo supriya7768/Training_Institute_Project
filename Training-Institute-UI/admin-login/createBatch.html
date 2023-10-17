@@ -1,0 +1,236 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="../img/logo.png" rel="icon">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Create Batch</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header id="header1">
+            <div class="image-text">
+                <span class="image">
+                    <img src="../img/logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Testing Shastra</span>
+                    <!-- <span class="profession">Web developer</span> -->
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-layer icon' ></i>
+                            <span class="text nav-text">Create Batch</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./assignMentor.html">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="text nav-text">Assign Mentor</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./batch.html">
+                            <i class='bx bx-paperclip icon'></i>
+                            <span class="text nav-text">Batches</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Attendence</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Assignments</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Mentorship</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <!-- <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li> -->
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+
+<!-- ==========================form========================= -->
+
+    <section class="home">
+        <div>
+            <div class="container">
+                <header>Create batch</header>
+        
+                <form action="#" id="registrationForm" autocomplete="off">
+                    <div class="form first">
+                        <div class="details personal">
+                            <span class="title">Batch Details</span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Name of Batch</label>
+                                    <input id="batchname" type="text" placeholder="Enter batch name" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Start Date</label>
+                                    <input id="sdate" type="date" placeholder="Enter birth date" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>End Date</label>
+                                    <input id="edate" type="date" placeholder="Enter birth date" required>
+                                </div>
+                               
+        
+                                <!-- <div class="input-field">
+                                    <label>Mobile Number</label>
+                                    <input id="mb" type="number" placeholder="Enter mobile number" required>
+                                </div> -->
+        
+                                <!-- <div class="input-field">
+                                    <label>Gender</label>
+                                    <select id="gen" required>
+                                        <option disabled selected>Select gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div> -->
+        
+                                <div class="input-field">
+                                    <label>Trainer</label>
+                                    <input id="t1" type="text" placeholder="Enter trainer name" required>
+                                    <input id="t2" type="text" placeholder="Enter trainer name" required>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="details ID">
+                            <span class="title">Students Details</span>
+        
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Total Student count</label>
+                                    <input id="scount" type="number" placeholder="Enter total students" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Testing</label>
+                                    <input id="test" type="number" placeholder="Enter count of student" required>
+                                </div>
+        
+                                <div class="input-field">
+                                    <label>Full-Stack</label>
+                                    <input id="full" type="number" placeholder="Enter count of student" required>
+                                </div>
+        
+                                <!-- <div class="input-field">
+                                  <label>Course Intrested</label>
+                                  <select id="cr" required>
+                                      <option disabled selected>Select course</option>
+                                      <option>Java Full Stack Development</option>
+                                      <option>Java Selenium Automation Testing</option>
+                                      <option>MERN Full Stack Development</option>
+                                      <option>Python Selenium Automation</option>
+                                  </select>
+                              </div>
+        
+                                 <div class="input-field">
+                                    <label>Fees Paid</label>
+                                    <input id="fee" type="number" placeholder="Enter amount of fees paid" required>
+                                </div>
+        
+                               <div class="input-field">
+                                    <label>Demo Session Attented</label>
+                                    <select id="demo" required>
+                                        <option disabled selected>Select Yes/No</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    
+                                    </select>
+                                </div> -->
+                              </div>
+              
+                                
+                                <button onclick="createBatch()">
+                                    <span class="btnText">Create Batch</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                </form>
+                <!-- <button onclick="sample()"> Hello </button> -->
+            </div>
+            <div class="new">
+                <h1 id="dt"></h1>
+            </div>
+        </div>
+    </section>
+
+    <script src="../jquery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

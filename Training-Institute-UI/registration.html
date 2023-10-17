@@ -7,7 +7,7 @@
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
-    <link href="../Training-Institute-Project/img/logo.png" rel="icon">
+    <link href="./img/logo.png" rel="icon">
      
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -18,7 +18,7 @@
     <div class="container">
         <header>Registration Form</header>
 
-        <form action="#">
+        <form action="#" id="registrationForm" autocomplete="off">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Personal Details</span>
@@ -26,27 +26,27 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <input id="fn" type="text" placeholder="Enter your name" required>
                         </div>
 
                         <div class="input-field">
                             <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
+                            <input id="dob" type="date" placeholder="Enter birth date" required>
                         </div>
 
                         <div class="input-field">
                             <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
+                            <input id="em" type="email" placeholder="Enter your email" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
+                            <label for="number">Mobile Number</label>
+                            <input id="mb" type="number" placeholder="Enter mobile number" required>
                         </div>
 
                         <div class="input-field">
                             <label>Gender</label>
-                            <select required>
+                            <select id="gen" required>
                                 <option disabled selected>Select gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -56,7 +56,7 @@
 
                         <div class="input-field">
                             <label>Address</label>
-                            <input type="text" placeholder="Enter your city name" required>
+                            <input id="add" type="text" placeholder="Enter your city name" required>
                         </div>
                     </div>
                 </div>
@@ -67,22 +67,22 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Degree</label>
-                            <input type="text" placeholder="Enter your degree" required>
+                            <input id="edu" type="text" placeholder="Enter your degree" required>
                         </div>
 
                         <div class="input-field">
                             <label>Year Of Passing</label>
-                            <input type="number" placeholder="Enter year of passing" required>
+                            <input id="yp" type="number" placeholder="Enter year of passing" required>
                         </div>
 
                         <div class="input-field">
                             <label>Expierience</label>
-                            <input type="number" placeholder="Enter years of experience" required>
+                            <input id="ep" type="number" placeholder="Enter years of experience" required>
                         </div>
 
                         <div class="input-field">
                           <label>Course Intrested</label>
-                          <select required>
+                          <select id="cr" required>
                               <option disabled selected>Select course</option>
                               <option>Java Full Stack Development</option>
                               <option>Java Selenium Automation Testing</option>
@@ -93,25 +93,37 @@
 
                          <div class="input-field">
                             <label>Fees Paid</label>
-                            <input type="number" placeholder="Enter amount of fees paid" required>
+                            <input id="fee" type="number" placeholder="Enter amount of fees paid" required>
                         </div>
 
-                       <!-- <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
-                        </div> -->
+                       <div class="input-field">
+                            <label>Demo Session Attented</label>
+                            <select id="demo" required>
+                                <option disabled selected>Select Yes/No</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            
+                            </select>
+                        </div>
                       </div>
       
                         
-                        <button class="sumbit">
+                        <button class="submit" type="submit" onclick="register()">
                             <span class="btnText">Submit</span>
                             <i class="uil uil-navigator"></i>
                         </button>
-
+                        
                     </div>
                 </div> 
             </div>
         </form>
     </div>
+    <div class="new">
+        <h1 id="dt"></h1>
+    </div>
+    
+   
+    <script src="user.js"></script>
+    <script src="jquery.js"></script>
 </body>
 </html>

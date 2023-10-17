@@ -1,0 +1,155 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="../img/logo.png" rel="icon">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Batches</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header id="header1">
+            <div class="image-text">
+                <span class="image">
+                    <img src="../img/logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Testing Shastra</span>
+                    <!-- <span class="profession">Web developer</span> -->
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./createBatch.html">
+                            <i class='bx bx-layer icon' ></i>
+                            <span class="text nav-text">Create Batch</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./assignMentor.html">
+                            <i class='bx bx-user-circle icon' ></i>
+                            <span class="text nav-text">Assign Mentor</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-paperclip icon'></i>
+                            <span class="text nav-text">Batches</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Attendence</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Assignments</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Mentorship</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <!-- <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li> -->
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- ===============form============== -->
+
+    <section class="home">
+        <div class="text"><div class="container">
+            <header>All Batches</header>
+    
+            <form action="#" id="registrationForm">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Batch Name</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <!-- <label style="width: 200px;">Name of Batch</label> -->
+                                <!-- <input style="width: 200px;" id="fn" type="text" placeholder="Enter batch name" required> -->
+                                
+                                <button style="width: 200px;" type="submit">
+                                    <span class="btnText">Carnation</span>
+                                    <i class="uil uil-navigator"></i>
+                                </button>
+
+                                <!-- <div id="batchButtons">
+                                     Batch buttons will be displayed here 
+                                </div> -->
+
+                            </div>
+                           
+                           
+          
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </div></div>
+    </section>
+
+    <script src="../jquery.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
